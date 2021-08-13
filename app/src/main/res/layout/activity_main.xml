@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/wtv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/times"
+        android:text="@string/about_us"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/about"
+        app:layout_constraintHorizontal_bias="0.914"
+        app:layout_constraintStart_toStartOf="@+id/tv"
+        app:layout_constraintTop_toBottomOf="@+id/about" />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/times"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textColor="@color/yellow"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:background="@null"
+        android:backgroundTint="#BC2D2D"
+        android:contentDescription="@string/watch_live_tv"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/about"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1"
+        app:srcCompat="@drawable/watchtv" />
+
+    <ImageButton
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:background="@null"
+        android:contentDescription="@string/about_us"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv"
+        app:layout_constraintTop_toBottomOf="@+id/t1"
+        app:srcCompat="@drawable/aboutus" />
+
+    <ImageButton
+        android:id="@+id/gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="56dp"
+        android:background="@null"
+        android:contentDescription="@string/gallery"
+        android:elevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wtv2"
+        app:srcCompat="@drawable/gallery" />
+
+    <ImageButton
+        android:id="@+id/prayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="32dp"
+        android:background="@null"
+        android:contentDescription="@string/prayer_request"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wtv"
+        app:srcCompat="@drawable/prayer" />
+
+    <TextView
+        android:id="@+id/wtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/times"
+        android:text="@string/watch_live_tv"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv"
+        app:layout_constraintStart_toStartOf="@+id/tv"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+
+    <TextView
+        android:id="@+id/wtv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/times"
+        android:text="@string/gallery"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/gallery"
+        app:layout_constraintHorizontal_bias="0.588"
+        app:layout_constraintStart_toEndOf="@+id/gallery"
+        app:layout_constraintStart_toStartOf="@+id/gallery"
+        app:layout_constraintTop_toBottomOf="@+id/gallery" />
+
+    <TextView
+        android:id="@+id/wtv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/times"
+        android:text="@string/prayer_request"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/prayer"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="@+id/prayer"
+        app:layout_constraintTop_toBottomOf="@+id/prayer" />
+
+    <Button
+        android:id="@+id/contactus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/yellow"
+        android:elevation="10dp"
+        android:fontFamily="@font/bash"
+        android:text="@string/contact_us"
+        android:textSize="41sp"
+        app:cornerRadius="31dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AdonaiTv</string>
+    <string name="welcome">Welcome to Adonai Television</string>
+    <string name="watch_live_tv">Watch Live TV</string>
+    <string name="about_us">About us</string>
+    <string name="contact_us">Contact US</string>
+    <string name="prayer_request">Prayer Request</string>
+    <string name="gallery">Gallery</string>
+</resources>
